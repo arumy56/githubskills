@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function myFunction(){
+            document.getElementById("change").innerHTML = "Magic happened";
+        }
+    </script>
 </head>
 <body>
     <h2>a page showing a bulb going on off</h2>
@@ -12,5 +17,9 @@
 
     <button onclick="document.getElementById('bulbee').src='my_bulb.jpg'"> turn off light</button>
     <img id="bulbee" src="my_bulb.jpg" style="width: 10%;">
+
+
+    <p id="change">click to see magic</p>
+    <button onclick="myFunction()" type="button" >Click</button>
 </body>
 </html>
